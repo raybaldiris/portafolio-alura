@@ -18,6 +18,8 @@ body {
   margin: 0rem;
   padding: 0rem;
   line-height: 1;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 ol,
 ul,
@@ -45,7 +47,7 @@ https://en.bem.info/methodology/quick-start/*/
 
 section.menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -74,14 +76,94 @@ section.menu {
   display: none;
 }
 
+/*Sección title*/
+
+section.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3.5rem;
+  flex-grow: 1;
+}
+.title__container {
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+.title__profile {
+  width: 6rem;
+  height: 6rem;
+}
+
+.title__bio {
+  font-size: 1.3rem;
+}
+
+.title__subsection {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.title__network {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0;
+  gap: 1rem;
+}
+
 @media (min-width: 1440px) {
+  /* Menu */
+
+  section.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1440px;
+    justify-content: space-between;
+  }
   .menu__list {
     display: flex;
   }
   .menu__list__item__contacto {
     display: none;
   }
+
+  /*Sección title*/
+  .title .title__div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-content: center;
+    align-items: center;
+  }
+
+  .title__profile {
+    width: 23rem;
+    height: 23rem;
+  }
+
+  .title__bio {
+    font-size: 3.25rem;
+  }
+
+  .title__subsection {
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+
+  .title__network {
+    font-size: 1rem;
+    padding: 0;
+    gap: 2rem;
+  }
+  .title__network img {
+    width: 1rem;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 834px) {
+  section.menu {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
