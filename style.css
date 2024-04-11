@@ -9,6 +9,7 @@ coloque nas sessões indicadas*/
   /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
   --cor-de-fundo: #f5f5f5;
   --cor-de-link: #000;
+  --cor-de-fondo-title: #eaf2fd;
 }
 
 body {
@@ -162,8 +163,23 @@ section.title {
 }
 
 @media (min-width: 834px) {
+  /*Menu*/
   section.menu {
     display: flex;
     flex-wrap: nowrap;
+  }
+
+  /*Sección title*/
+  .title .title__div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .title__profile {
+    width: 9rem;
+    height: 9rem;
   }
 }
