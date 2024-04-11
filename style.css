@@ -110,7 +110,15 @@ section.title {
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0;
-  gap: 1rem;
+  gap: 0.3rem;
+}
+
+.title__network img {
+  width: 1rem;
+}
+
+/* Sobre mi */
+section.about {
 }
 
 @media (min-width: 1440px) {
