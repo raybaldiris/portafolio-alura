@@ -135,6 +135,24 @@ section.about {
 /* Skill */
 section.skills {
   display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.skills__title {
+  justify-self: center;
+}
+
+.skills__line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills__box {
+  width: 9rem;
+  height: 7.5rem;
+  background-color: gray;
 }
 
 @media (min-width: 1440px) {
