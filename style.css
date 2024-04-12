@@ -54,6 +54,7 @@ section.menu {
   top: 0;
   width: 100%;
   background-color: rgba(17, 17, 17, 0.71);
+  border-radius: 1rem;
   backdrop-filter: blur(7px);
   margin-top: 1rem;
 }
@@ -89,6 +90,7 @@ section.title {
   margin-top: 3.5rem;
   flex-grow: 1;
   padding: 1rem;
+  text-align: center;
 }
 .title__container {
   flex-flow: column nowrap;
@@ -96,10 +98,6 @@ section.title {
 }
 .title__div img {
   justify-self: center;
-}
-.title__profile {
-  width: 6rem;
-  height: 6rem;
 }
 
 .title__bio {
@@ -214,13 +212,9 @@ section.work {
     align-items: center;
   }
 
-  .title__profile {
-    width: 23rem;
-    height: 23rem;
-  }
-
   .title__bio {
-    font-size: 3.25rem;
+    font-size: 15vh;
+    font-weight: 600;
   }
 
   .title__subsection {
@@ -228,15 +222,13 @@ section.work {
     font-size: 1.3rem;
   }
 
-  .title__network {
-    font-size: 1rem;
-    padding: 0;
-    gap: 2rem;
-  }
   .title__network img {
     width: 1rem;
   }
   /* Work */
+  section.work {
+    padding: 60px 5%;
+  }
   .work__box {
     display: flex;
     flex-direction: row;
@@ -280,5 +272,38 @@ section.work {
   .title__profile {
     width: 9rem;
     height: 9rem;
+  }
+  .title__network {
+    font-size: 1rem;
+    padding: 0;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  /* Work */
+  section.work {
+    padding: 0px 5%;
+  }
+  .work__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .work__info {
+    width: 20rem;
+  }
+
+  .work__portada {
+    justify-items: flex-end;
+    flex-grow: 1;
+    background-color: yellow;
+    margin-top: 0px;
+  }
+
+  .work__img {
+    object-fit: cover;
+    flex-grow: 1;
   }
 }
