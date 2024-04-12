@@ -16,7 +16,8 @@ body {
   box-sizing: border-box;
   background-color: var(--cor-de-fundo);
   font-family: "Raleway";
-  padding: 0;
+  margin: 0rem;
+  padding: 0rem;
   line-height: 1;
   max-width: 1440px;
   margin: 0 auto;
@@ -52,19 +53,20 @@ section.menu {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0.5rem;
-  background-color: var(--cor-de-fundo);
+  background-color: rgba(17, 17, 17, 0.71);
+  backdrop-filter: blur(7px);
+  margin-top: 1rem;
 }
 
 .menu__header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.3rem;
+  gap: 1rem;
 }
 .menu__header img {
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .menu__list {
@@ -80,18 +82,20 @@ section.menu {
 
 /*Sección title*/
 
-.title .title__div {
+section.title {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 3.5rem;
   flex-grow: 1;
   padding: 1rem;
-  flex-wrap: nowrap;
 }
 .title__container {
   flex-flow: column nowrap;
   gap: 1rem;
+}
+.title__div img {
+  justify-self: center;
 }
 .title__profile {
   width: 6rem;
@@ -110,17 +114,14 @@ section.menu {
 .title__network {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  text-wrap: nowrap;
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0;
-  gap: 0.1rem;
-  align-items: center;
+  gap: 0.3rem;
 }
 
 .title__network img {
-  width: 0.8rem;
+  width: 1rem;
 }
 
 /* Sobre mi */
@@ -134,12 +135,20 @@ section.about {
 
 /* Skill */
 section.skills {
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: auto;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.skills > * {
+  flex: 1 100%;
 }
 .skills__title {
-  justify-self: center;
+  text-align: center;
 }
 
 .skills__line {
@@ -147,6 +156,7 @@ section.skills {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .skills__box {
@@ -176,7 +186,13 @@ section.skills {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    align-content: center;
     align-items: center;
+  }
+
+  .title__profile {
+    width: 23rem;
+    height: 23rem;
   }
 
   .title__bio {
@@ -196,13 +212,9 @@ section.skills {
   .title__network img {
     width: 1rem;
   }
-  .title__profile {
-    width: 23rem;
-    height: 23rem;
-  }
 }
 
-@media (min-width: 768px) and (max-width: 864px) {
+@media (min-width: 834px) {
   /*Menu*/
   section.menu {
     display: flex;
@@ -216,16 +228,10 @@ section.skills {
     flex-direction: row-reverse;
     align-content: center;
     align-items: center;
-    flex-wrap: nowrap;
-    width: 100%;
-    gap: 1.5rem;
-  }
-  .title__div .title__profile {
-    width: 150px;
-    height: 150px;
-  }
-
-  .title__network {
     gap: 2rem;
+  }
+  .title__profile {
+    width: 9rem;
+    height: 9rem;
   }
 }
