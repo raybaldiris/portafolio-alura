@@ -129,6 +129,12 @@ section.about {
   flex-flow: column nowrap;
   padding: 1rem;
   text-align: justify;
+  background-color: yellow;
+}
+
+/* Skill */
+section.skills {
+  display: flex;
 }
 
 @media (min-width: 1440px) {
