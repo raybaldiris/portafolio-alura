@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/efectos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonte del Proyecto Raleway -->
@@ -24,12 +25,9 @@
             </header>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                    <li class="menu__list__item"><a href="#contacto">Contacto@gmail.com</a></li>
+                    <li class="menu__list__item"><a href="./index.html">Inicio</a></li>
+                    <li class="menu__list__item"><a href="./work">Trabajos</a></li>
+                    <li class="menu__list__item"><a href="./sobre-mi.html">Sobre mi</a></li>
                 </ul>
                 <li class="menu__list__item__contacto"><a href="#contacto">Contacto@gmail.com</a></li>
             </nav>
@@ -133,35 +131,33 @@
             </div>
         </section>
 
-        <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con
-                        usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
-                            placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                    </form>
-                </div>
-            </div>
+        <section class="redes">
+            <h1 class="title__bio">Trabajemos <br>
+                juntos
+            </h1>
+            <ul class="title__network">
+                <!-- Pon los enlaces de tus redes sociales favoritas -->
+                <li class="title__network__item"><a href="">Github <img src="assets\arrow.svg"> </a></li>
+                <li class="title__network__item"><a href="">Linkedin <img src="assets\arrow.svg"></a></li>
+                <li class="title__network__item"><a href="">Instagram <img src="assets\arrow.svg"></a></li>
+                <li class="title__network__item"><a href="">Currículo <img src="assets\arrow.svg"></a></li>
+            </ul>
+
         </section>
 
         <!-- Sección de Footer -->
-        <footer class="footer">
-            <small class="footer__rodape">
-                <p>Desarrollado por Ray</p>
-                <p>2024</p>
-            </small>
+        <footer class="footer__container">
+
+            <ul class="footer__list">
+                <li class="footer__list__item"><a href="./index.html">Inicio</a></li>
+                <li class="footer__list__item"><a href="./work">Trabajos</a></li>
+                <li class="footer__list__item"><a href="./sobre-mi.html">Sobre mi</a></li>
+            </ul>
+
+            <h5 class="footer_desarrollo">Desarrollado por Ray - 2024</h5>
+
+
+
         </footer>
     </div>
     <!-- Script del documento JavaScript -->
