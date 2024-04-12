@@ -124,15 +124,6 @@ section.title {
   width: 1rem;
 }
 
-/* Sobre mi */
-section.about {
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 1rem;
-  text-align: justify;
-  background-color: yellow;
-}
-
 /* Skill */
 section.skills {
   align-items: center;
@@ -165,6 +156,39 @@ section.skills {
   background-color: gray;
 }
 
+/* Work */
+section.work {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.2rem;
+  margin: 0;
+}
+
+.work__section__title {
+  text-align: center;
+  font-size: 3rem;
+}
+.work__title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.work__text {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.work__portada {
+  display: flex;
+  margin-left: 0;
+  width: 100%;
+}
+
+.work__img {
+  width: 55vh;
+}
 @media (min-width: 1440px) {
   /* Menu */
 
