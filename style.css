@@ -212,11 +212,6 @@ section.work {
     align-items: center;
   }
 
-  .title__bio {
-    font-size: 15vh;
-    font-weight: 600;
-  }
-
   .title__subsection {
     font-weight: 400;
     font-size: 1.3rem;
@@ -268,6 +263,10 @@ section.work {
     align-content: center;
     align-items: center;
     gap: 2rem;
+  }
+  .title__bio {
+    font-size: 15vh;
+    font-weight: 600;
   }
   .title__profile {
     width: 9rem;
