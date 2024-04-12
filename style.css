@@ -236,6 +236,29 @@ section.work {
   .title__network img {
     width: 1rem;
   }
+  /* Work */
+  .work__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .work__info {
+    width: 20rem;
+  }
+
+  .work__portada {
+    justify-items: flex-end;
+    width: 61rem;
+    height: 50rem;
+    flex-grow: 1;
+    background-color: yellow;
+  }
+
+  .work__img {
+    object-fit: cover;
+    flex-grow: 1;
+  }
 }
 
 @media (min-width: 834px) {
